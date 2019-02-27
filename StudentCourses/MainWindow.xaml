@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StudentCourses"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="132*"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="label" Content="Select a Course File:&#xD;&#xA;" HorizontalAlignment="Left" Margin="41,82,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <Label Content="Students:&#xD;&#xA;" HorizontalAlignment="Left" Margin="74,234,0,0" VerticalAlignment="Top" FontSize="20"/>
+        <ListBox x:Name="listboxCourses" HorizontalAlignment="Left" Height="110" Margin="245,53,0,0" VerticalAlignment="Top" Width="269"/>
+        <ListBox x:Name="studentListBox" HorizontalAlignment="Left" Height="108" Margin="245,212,0,0" VerticalAlignment="Top" Width="269"/>
+
     </Grid>
 </Window>
